@@ -21,17 +21,19 @@ const Header = () => {
                     className="mr-3 h-6 sm:h-9"
                     alt="Brand Logo"
                 />
-                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-                    KA TASK MANAGER
-                </span>
+                <Link to='/'>
+                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+                        KA TASK MANAGER
+                    </span>
+                </Link>
             </Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse>
-                {/* <Navbar.Link
+                <Navbar.Link
                     active={true}
                 >
                     <Link to='/'>Home</Link>
-                </Navbar.Link> */}
+                </Navbar.Link>
                 <Navbar.Link>
                     <Link to='/add-task'>Add Task</Link>
                 </Navbar.Link>
